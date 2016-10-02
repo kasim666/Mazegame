@@ -99,18 +99,18 @@ namespace Mazegame
         public void createItem()
         {
             bondi.GetInventory().AddMoney(60);
-            bondi.GetInventory().AddItem(new Item("candy", 20, 10, "Eat as you go"));
+            bondi.GetInventory().AddItem(new Shield("candy", 20, 10, "Eat as you go"));
 
             den.GetInventory().AddMoney(99999);
-            shop.GetInventory().AddItem(new Item("nunchaku", 10, 11, "Two Stick Weapon"));
-            town.GetInventory().AddItem(new Item("shuriken", 15, 15, "Small ninja throwables"));
-            shop.GetInventory().AddItem(new Item("katana", 17, 20, "Sword"));
-            westfield.GetInventory().AddItem(new Item("kunai", 15, 10, "A steel wedge"));
-            town.GetInventory().AddItem(new Item("dart", 10, 10, "Poison darts"));
-            harbour.GetInventory().AddItem(new Item("shield", 20, 20, "Protection against enemies"));
-            shop.GetInventory().AddItem(new Item("armor", 25, 30, "Powerful than shield"));
-            town.GetInventory().AddItem(new Item("berries", 10, 5, "Boost up your HP"));
-            shop.GetInventory().AddItem(new Item("crystal", 30, 15, "Full Power"));
+            shop.GetInventory().AddItem(new Weapon("nunchaku", 10, 11, "Two Stick Weapon"));
+            town.GetInventory().AddItem(new Weapon("shuriken", 15, 15, "Small ninja throwables"));
+            shop.GetInventory().AddItem(new Weapon("katana", 17, 20, "Sword"));
+            westfield.GetInventory().AddItem(new Weapon("kunai", 15, 10, "A steel wedge"));
+            town.GetInventory().AddItem(new Weapon("dart", 10, 10, "Poison darts"));
+            harbour.GetInventory().AddItem(new Shield("shield", 20, 20, "Protection against enemies"));
+            shop.GetInventory().AddItem(new Armor("armor", 25, 30, "Powerful than shield"));
+            town.GetInventory().AddItem(new Shield("berries", 10, 5, "Boost up your HP"));
+            shop.GetInventory().AddItem(new Shield("crystal", 30, 15, "Full Power"));
             harbour.GetInventory().AddMoney(50);
             /*
             nunchaku = new Weapon(500, 4, "Two Stick Weapon");

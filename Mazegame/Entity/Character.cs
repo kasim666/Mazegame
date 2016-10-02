@@ -38,7 +38,10 @@ namespace Mazegame.Entity
         public Character(String name)
         {
             this.name = name;
-
+            m_Armor = null;
+            m_Item = null;
+            m_Shield = null;
+            m_Weapon = null;
             agility = AgilityTable.GetInstance().GetModifier(DiceRoller.GetInstance().GenerateAbilityScore());
             strength = StrengthTable.GetInstance().GetModifier(DiceRoller.GetInstance().GenerateAbilityScore());
             weightLimit = WeightLimit.GetInstance().GetModifier(DiceRoller.GetInstance().GenerateAbilityScore());

@@ -34,6 +34,20 @@ namespace Mazegame.Entity
             items = new Inventory();
             characterList = new NonPlayerCharacterCollection();
         }
+        public Exit GetRandomExit()
+        {
+            Random random = new Random();
+            int r = random.Next(exits.Count);
+            int i = 0;
+            foreach(Exit exit in exits.Values) {
+                if (i == r)
+                {
+                    return exit;
+                }
+                i++;
+            }
+            return null;
+        }
 
         public NonPlayerCharacterCollection GetNonPlayerCharacterCollection()
         {

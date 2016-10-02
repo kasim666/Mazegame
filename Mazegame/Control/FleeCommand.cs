@@ -11,7 +11,9 @@ namespace Mazegame.Control
         public override CommandResponse Execute(ParsedInput userInput,
             Player thePlayer)
         {
-            return new CommandResponse("You entered the flee command");
+            thePlayer.CurrentLocation = thePlayer.CurrentLocation.GetRandomExit().Destination;
+            return new CommandResponse("You successfully fled from the enemy and are in some safe location" + thePlayer.CurrentLocation.Description);
         }
+        
     }
 }

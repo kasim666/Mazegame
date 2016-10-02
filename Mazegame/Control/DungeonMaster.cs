@@ -41,6 +41,7 @@ namespace Mazegame.Control
         {
             String playerName = gameClient.GetReply("What name do you choose to be known by?");
             thePlayer = new Player(playerName);
+            //thePlayer.MShield = null;
             thePlayer.CurrentLocation = gameData.GetStartingLocation();
             thePlayer.GetInventory().AddMoney(500);
             //gameClient.PlayerMessage("weight limit  " + thePlayer"\n\n");

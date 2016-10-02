@@ -15,10 +15,13 @@ namespace Mazegame.Control
             AvailableCommands.Add("go", new MoveCommand());
             AvailableCommands.Add("quit", new QuitCommand());
             AvailableCommands.Add("get", new GetItem());
+            AvailableCommands.Add("drop", new DropItem());
             AvailableCommands.Add("move", new MoveCommand());
             AvailableCommands.Add("look", new LookCommand());
             AvailableCommands.Add("list", new ListItem());
-            
+            AvailableCommands.Add("equip", new EquipItem());
+            AvailableCommands.Add("unequip", new UnequipItem());
+
         }
 
         public override CommandState Update(Player thePlayer)
